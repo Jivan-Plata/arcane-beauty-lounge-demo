@@ -1,0 +1,97 @@
+/* HORIZONTAL LINE DIVIDER (BELOW BANNER) */
+hr.divider {
+    width: 100%;
+    height: 15px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+hr.divider2 {
+    width: 100%;
+    height: 5px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.mainBody { 
+	min-height:100vh;
+	background: url(../images/Resources/PageResources/resourceArcanists/servicePatternedBG.png) no-repeat center center;				;
+	background-size: cover;
+    text-align: center;
+  
+	.secondBanner {
+		min-height: 20vh;
+		display:flex;
+		color: aliceblue;
+		background: url(../images/Resources/PageResources/resourceProduct/headerPatternedBG.png) no-repeat center center;		
+		background-size: cover;
+    	flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+	h1 {
+		margin-top: 0;
+		margin-bottom: 0;
+		font-family: 'Acumin', sans-serif;
+		font-weight: bold;
+		font-size: 55px;
+	}
+}
+
+/* HEADER - MEMBER IMAGES 1 */
+
+.memberImages1 {
+    display: flex;
+    flex-direction: column; 
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    z-index: 1;
+    width: 100%; 
+    height: 100%; 
+
+    div {
+        width: 100%; 
+        height: 680px;
+        display: flex;
+        align-items: flex-start; 
+    }
+    
+}
+
+.memberImages1 img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+
+/* BODY - MEMBER IMAGES 2 */
+.memberImages2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-self: center;
+    margin-bottom: 4vh;
+
+    div {
+        margin-bottom: 3vh;
+        margin-right: 2vh;
+        margin-left: 2vh;
+    }
+
+}
+
+.memberImages2 img {
+    width: 400px; 
+    
+}
+
+.sectionFooter { 
+	min-height: 10vh;
+    background:#D3AF37;
+    background-size:cover;
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- CSS LINK -->
+		<link rel="stylesheet" href="./css/arcaneBanner.css">
+		<link rel="stylesheet" href="./css/arcaneHome.css">
+		<link rel="stylesheet" href="./css/arcaneContactUs.css">
+		
+		<!-- TITLE -->
+		<title> Contact us </title>
+	</head>
+
+	<body>
+	<!-- HEADER BANNER -->
+
+	<div class="headerBanner">
+		<div class = "headerContent">
+
+			<!-- MAIN LOGO (ALSO LINKS TO "HOME" WHEN CLICKED) -->
+			<div id = "imgContainer">
+
+				<a href="index.html"> 
+					<img src="./images/Resources/ArcaneLogo.png" height="auto" width="250px"> 
+				</a>
+						
+			</div>
+			
+		<!-- LINKS TO OTHER PAGES -->
+		<div class="headerMenu"> 
+			<a href="index.html" class="bannerOption">Home</a>
+			<a href="products.html" class="bannerOption">Products</a>
+			<a href="services-lounge.html" class="bannerOption">Services</a>
+			<a href="branches.html" class="bannerOption">Branches</a>
+			<a href="contact-us.html" class="bannerOption">Contact Us</a>
+			<a href="https://www.facebook.com/messages/t/100730569594534"target="_blank" rel="noopener noreferrer" class="bannerOption">Book now</a>
+		</div> 
+
+		<!-- BURGER BUTTON -->
+		<div id="burgerBtn">
+			<div></div>
+			<div></div>
+			<div></div>
+		 </div>
+	</div>
+
+	<!-- SIDE PANE -->
+	<div id="side-pane" class = "side-pane">
+		<span id="close-btn" style="cursor: pointer; font-size: 1.25rem;"> X </span>
+		<a href="index.html" class="bannerOption">Home</a>
+		<a href="products.html" class="bannerOption">Products</a>
+		<a href="services-lounge.html" class="bannerOption">Services</a>
+		<a href="branches.html" class="bannerOption">Branches</a>
+		<a href="contact-us.html" class="bannerOption">Contact Us</a>
+		<a href="https://www.facebook.com/messages/t/100730569594534"target="_blank" rel="noopener noreferrer" class="bannerOption">Book now</a>
+
+	 </div>
+
+
+		
+	<!-- DIVIDER 1 (Horizontal line)-->
+		<div class = "dividers">
+			<hr color="#D3AF37">
+			<hr color="#171717">
+		</div>
+
+	</div>
+
+
+	<!-- BODY -->
+		<div class="mainContainer">
+			<div class="mainColumn">
+				<div>			
+
+					<div class="containerMainHeader">
+						<div><br>
+							<h1 class="headerLetter" style="text-align: center;">CONTACT US</h1>
+						</div>
+					</div>
+					<div class="containerFormHeader">
+					<div>
+						<br>
+						<h2 class="headerDescription" style="text-align: center;">If you have any questions, please don't hesitate to ask us. </h2>
+						<br>
+					</div>
+						<hr class="divider" color="#111111">
+					</div>
+
+						<form class="containerFormBody" method="POST">
+
+								<br>
+								<label><span>EMAIL</span><br>
+									<textarea name="userEmail" rows="1" cols="55" id="userEmail" 
+									placeholder="Demo only — backend not connected"                         
+									></textarea></label>
+
+							<div>
+								<label><span>MESSAGE</span><br>
+								<textarea name="userMessage" rows="10" cols="55" id="userMessage"
+								placeholder="Demo only — backend not connected"
+								
+								></textarea></label> 	<!--The '>' is placed here so as not to
+																put a space inside the text area -->
+							</div>
+
+							<div>
+								<button type="reset"> Reset </button>
+								<button type="submit"> Submit </button>
+							</div> <br>
+
+						</form>
+
+						<div class="contacts-section">
+
+							<hr class="divider" color="#111111">
+
+							<h2 class="headerLetter" style="text-align: center;">CONTACT NO. & SOCIAL MEDIA</h2> <br>
+
+							<div class="contacts">
+
+								<p><img src="./images/Resources/PageResources/resourceContactUs/iconTelephone.png">: (046)887-7424</p>
+								<p><img src="./images/Resources/PageResources/resourceContactUs/iconCellphone.png">: 0962-064-4552</p>										
+								<p><img src="./images/Resources/PageResources/resourceContactUs/iconFacebook.png">: @arcanebeautyph</p>
+								<p><img src="./images/Resources/PageResources/resourceContactUs/iconInstagram.png">: @arcanebeauty</p>
+								<p ><img src="./images/Resources/PageResources/resourceContactUs/iconTiktok.png">: @arcanebeautyofficial</p>
+
+							</div>
+
+							<!-- DIVIDER 4 (Horizontal line)-->
+							<hr class="divider" color="#111111">
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- DIVIDER 5 (Horizontal line)-->
+		<hr class="divider" color="#171717">
+
+		<!-- FOOTER -->
+			<div class="sectionFooter">
+				<br>
+				<div>
+					<a href="https://www.lazada.com.ph/shop/arcanebeautyofficialph/" target="_blank">
+						<img src="./images/Resources/PageResources/resourceHome/lazadaLogo.png" alt="Lazada Logo">
+					</a>
+					<a href="https://shopee.ph/arcanebeautyofficial" target="_blank">
+						<img src="./images/Resources/PageResources/resourceHome/shopeeLogo.png" alt="Shopee Logo">
+					</a>
+				</div>
+				<div>
+					<i><b><p>@arcanebeautyofficial</p></b></i><br>
+				</div>
+			</div>
+
+	<script src="./js/BannerScript.js"></script>
+	<script src = './js/sidePane.js'></script>
+
+	</body>
+</HTML>

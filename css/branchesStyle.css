@@ -1,0 +1,283 @@
+@font-face {
+	font-family: 'Parisienne';
+	src: url('../fonts/Parisienne-Regular.woff2'),
+		 url('../fonts/Parisienne-Regular.woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* PAGE TITLE */
+h1.pageTitle {
+	font-family: 'Acumin', sans-serif;
+	font-weight: bold;
+	font-size: 50px;
+}
+
+h2.pageTitle {
+	text-align: center;
+	padding-top: 50px;
+	font-family: 'Parisienne', sans-serif;
+	font-weight: normal;
+	font-size: 40px;
+}
+
+/* HORIZONTAL LINE DIVIDER (BELOW BANNER) */
+hr.divider{
+	width:100%;
+	height:15px; 
+	padding:0; 	
+	margin:0; 
+	border:0;
+}
+
+hr.divider2{
+	width:100%;
+	height:5px; 
+	padding:0; 
+	margin:0; 
+	border:0;
+}
+
+/* BACKGROUND FOR HEADER */
+.sectionHeader {
+	background-color: white;
+	padding:0; 
+	margin:0; 
+	border:0;
+}
+
+/* BODY */
+.sectionBody { 
+	position:relative;
+	background: url(../images/Resources/PageResources/resourceBranches/backgroundBranches.png) no-repeat left center;
+	background-size: cover;
+
+	h3{
+		font-family: 'Acumin';
+		font-weight: normal;
+	}
+
+	h2 {
+		font-family: "Acumin";
+		font-weight: bold;
+	}
+
+	p {
+		font-family: 'Acumin';
+		font-weight: lighter;
+		font-size: medium;
+	}
+  }
+
+.sectionBody {
+	min-height:100vh;
+	display: flex;
+}
+
+/* TEXT INFORMATION ON LEFT SIDE OF PAGE */
+.textInformation{
+	margin-left: 10%;
+	margin-top: 4%;
+	
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+	align-items: flex-start;    
+	gap: 5rem;
+}
+
+/* OUR BRANCHES */
+.ourBranches{
+	top: 8%;
+}
+
+.pins {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1.5rem;
+	
+}
+
+/* DIMASALANG, MANILA */
+#dimasalang {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	h2 {
+		color:white;
+	}
+}
+
+#dimasalang:hover{
+	h2{
+		color:#D3AF37
+	}
+}
+
+/* DASMARINAS, CAVITE */
+#dasmarinas{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	h2{
+		color:white;
+	}
+}
+
+#dasmarinas:hover{
+	h2{
+		color:#D3AF37
+	}
+}
+
+/* POP UP */
+#mapDimasalang{
+	display:none;
+	position:fixed;
+	flex-direction: row;
+
+	border-radius: 10px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 9999;        
+	border: 4px solid black;
+
+	@media (width >= 100rem) {
+		height: 30vw;
+		width: 60vw;
+	}
+}
+
+/* GOOGLE MAPS EMBED */
+#mapDimasalang iframe {
+	height:100%;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    position: relative;
+	display: none;
+
+	@media (width >= 100rem) {
+		display: block;
+	}
+}
+
+/* POP UP */
+#mapDasmarinas{
+	flex-direction: row;
+	border-radius: 10px;
+    display:none;
+	position:fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 9999;      
+	border: 4px solid black;
+	
+	@media (width >= 100rem) {
+		height: 30vw;
+		width: 60vw;
+	}
+
+}
+
+/* GOOGLE MAPS EMBED */
+#mapDasmarinas iframe {
+	height:100%;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    position: relative;
+	display: none;
+
+	@media (width >= 100rem) {
+		display: block;
+	}
+}
+
+/* Branch Details (Left Side of Map) */
+.branchDetails{
+    display:flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #fefefe;
+	padding: 1rem;
+
+	.branch-icons {
+	width:24px;
+	height:24px;
+	};
+
+	.popup-divider-line {
+		border: none;
+		background-color: #2a131b;
+		width: 100%;
+		height: 3px;
+	}
+}
+
+.branch-details-box {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	gap: 3rem;
+}
+
+.item {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+
+	.icon-plus-text {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.item-information {
+		text-align: right;
+	}
+}
+
+/*Arcane Beauty Lounge Logo */
+.logoPopup{
+    align-self: center;
+    border-bottom: 3px solid #171717;
+	padding: 25px;
+}
+
+.sectionFooter { 
+	background-color: #D3AF37;	
+	background-size: cover;	
+	text-align: right;
+	text-decoration: solid;
+	margin: 0px;
+	padding: 0px;
+
+	img{
+		padding-right: 20px;
+		margin-bottom: 0;
+		max-height: 60px;
+		width: auto;
+	}
+
+	p {
+		font-family: 'Acumin';
+		padding-right: 20px;
+		margin-top: 2px;
+		padding-bottom: 20px;
+		font-size: larger;
+	}
+}
+

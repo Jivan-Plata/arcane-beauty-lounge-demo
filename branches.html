@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- CSS LINK -->
+		<link rel="stylesheet" href="./css/arcaneBanner.css">
+		<link rel="stylesheet" href="./css/branchesStyle.css">
+		
+		<!-- TITLE -->
+		<title> Our Branches </title>
+	</head>
+
+	<body>
+	<!-- HEADER BANNER -->
+
+	<div class="headerBanner">
+		<div class = "headerContent">
+
+			<!-- MAIN LOGO (ALSO LINKS TO "HOME" WHEN CLICKED) -->
+			<div id = "imgContainer">
+
+				<a href="index.html"> 
+					<img src="./images/Resources/ArcaneLogo.png" height="auto" width="250px"> 
+				</a>
+						
+			</div>
+					<!-- LINKS TO OTHER PAGES -->
+		<div class="headerMenu"> 
+			<a href="index.html" class="bannerOption">Home</a>
+			<a href="products.html" class="bannerOption">Products</a>
+			<a href="services-lounge.html" class="bannerOption">Services</a>
+			<a href="branches.html" class="bannerOption">Branches</a>
+			<a href="contact-us.html" class="bannerOption">Contact Us</a>
+			<a href="https://www.facebook.com/messages/t/100730569594534"target="_blank" rel="noopener noreferrer" class="bannerOption">Book now</a>
+		</div> 
+
+		<!-- BURGER BUTTON -->
+		<div id="burgerBtn">
+			<div></div>
+			<div></div>
+			<div></div>
+		 </div>
+	</div>
+
+	<!-- SIDE PANE -->
+	<div id="side-pane" class = "side-pane">
+		<span id="close-btn" style="cursor: pointer; font-size: 1.25rem;"> X </span>
+		<a href="home.html" class="bannerOption">Home</a>
+		<a href="products.html" class="bannerOption">Products</a>
+		<a href="services-lounge.html" class="bannerOption">Services</a>
+		<a href="branches.html" class="bannerOption">Branches</a>
+		<a href="contact-us.html" class="bannerOption">Contact Us</a>
+		<a href="https://www.facebook.com/messages/t/100730569594534"target="_blank" rel="noopener noreferrer" class="bannerOption">Book now</a>
+
+	 </div>
+
+
+		
+	<!-- DIVIDER 1 (Horizontal line)-->
+		<div class = "dividers">
+			<hr color="#D3AF37">
+			<hr color="#171717">
+		</div>
+
+	</div>
+
+	<!-- BODY -->	
+		<div class="sectionBody">
+			<div class = textInformation>
+
+				<!-- TEXTS ON LEFT SIDE OF PAGE-->
+				<div class = "ourBranches">
+
+					<h1 class = "pageTitle" style = "color: #d4af37">OUR BRANCHES</h1>
+					<h3 style = "color: white;"> For additional details and location <br> information, please click the pin buttons. </h3>
+
+				</div>
+
+				<div class = pins>
+
+					<div id="dimasalang" onclick="toggleMapDisplay()">
+					
+						<img src = "./images/Resources/PageResources/resourceBranches/pinManila.png">
+						<h2> DIMASALANG, MANILA </h2>
+
+					</div>
+
+					<div id = "dasmarinas" onclick = "toggleMapDisplay1()">
+
+						<img src = "./images/Resources/PageResources/resourceBranches/pinDasma.png">
+						<h2> DASMARINAS, CAVITE </h2>
+
+					</div>
+					
+				</div>
+			</div>
+
+			<!-- DIMASALANG POPUP UPON PRESSING BUTTON-->
+			<div id = "mapDimasalang">
+
+				<!--BRANCH INFORMATION (ON LEFT SIDE OF MAP) -->
+				<div class = "branchDetails">
+	
+					<img src = "./images/Resources/logoWhite.png">
+
+					<hr class = 'popup-divider-line'>
+					
+					<div class = "branch-details-box">
+					
+						<!--OPERATING HOURS-->
+						<div class = "item">
+
+							<div class = "icon-plus-text">
+								<img src = "./images/Resources/PageResources/resourceBranches/timeIcon.png" class = "branch-icons">
+								<p>Operating Hours: </p>
+							</div>
+
+							<p class = "item-information"> Mon - Sun 10:00AM to 9:00PM</p>
+
+						</div>
+					
+						<!-- CONTACT NUMBER -->
+						<div class = "item">
+							
+							<div class = "icon-plus-text">
+								<img src = "./images/Resources/PageResources/resourceBranches/landlineIcon.png" class = "branch-icons">
+								<p>Contact Number</p>
+							</div>
+
+							<p class = "item-information"> 0962 064 4552 / (046) 887 7424</p>
+							
+						</div>
+
+						<!-- INSTAGRAM -->
+						<div class = "item">
+
+							<div class = "icon-plus-text">
+								<img src = "./images/Resources/PageResources/resourceBranches/instagramIcon.png" class = "branch-icons">
+								<p>Instagram</p>
+							</div>
+							
+							<p class = "item-information"> arcanebeautyofficial</p>
+
+						</div>
+
+						<!-- FACEBOOK -->
+						<div class = "item">
+
+							<div class = "icon-plus-text">
+								<img src = "./images/Resources/PageResources/resourceBranches/facebookIcon.png" class = "branch-icons">
+								<p>Facebook</p>
+							</div>
+
+							<p class = "item-information"> Arcane Beauty Lounge</p>
+
+						</div>
+
+						<!-- TIKTOK -->		
+						<div class = "item">	
+
+							<div class = "icon-plus-text">
+								<img src = "./images/Resources/PageResources/resourceBranches/tiktokIcon.png" class = "branch-icons">
+								<p>Tiktok</p>		
+							</div>	
+
+							<p class = "item-information"> arcanebeautyofficial </p>
+
+						</div>
+					</div>
+
+					<hr class = 'popup-divider-line'>
+
+	
+			</div>
+
+				<!-- GOOGLE MAPS EMBED -->
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.560493492187!2d120.98901219999999!3d14.6240952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b70f52d905b1%3A0x3e7d0acf30c2399b!2sQueenV%20Restaurant%20and%20Venue!5e0!3m2!1sen!2sph!4v1720500658739!5m2!1sen!2sph" width="500" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe>
+		</div>
+
+			
+			<!-- DASMARINAS POPUP UPON PRESSING BUTTON-->
+			<div id = "mapDasmarinas">
+				<!--BRANCH INFORMATION (ON LEFT SIDE OF MAP) -->
+				<div class = "branchDetails">
+	
+					<img src = "./images/Resources/logoWhite.png">
+
+					<hr class = 'popup-divider-line'>
+					
+					<div class = "branch-details-box">
+					
+						<!--OPERATING HOURS-->
+						<div class = "item">
+
+							<div class = "icon-plus-text">
+								<img src = "./images/Resources/PageResources/resourceBranches/timeIcon.png" class = "branch-icons">
+								<p>Operating Hours: </p>
+							</div>
+
+							<p> Mon - Sun 10:00AM to 9:00PM</p>
+
+						</div>
+					
+						<!-- CONTACT NUMBER -->
+						<div class = "item">
+							
+							<div class = "icon-plus-text">
+								<img src = "./images/Resources/PageResources/resourceBranches/landlineIcon.png" class = "branch-icons">
+								<p>Contact Number</p>
+							</div>
+
+							<p> 0962 064 4552 / (046) 887 7424</p>
+							
+						</div>
+
+						<!-- INSTAGRAM -->
+						<div class = "item">
+
+							<div class = "icon-plus-text">
+								<img src = "./images/Resources/PageResources/resourceBranches/instagramIcon.png" class = "branch-icons">
+								<p>Instagram</p>
+							</div>
+							
+							<p> arcanebeautyofficial</p>
+
+						</div>
+
+						<!-- FACEBOOK -->
+						<div class = "item">
+
+							<div class = "icon-plus-text">
+								<img src = "./images/Resources/PageResources/resourceBranches/facebookIcon.png" class = "branch-icons">
+								<p>Facebook</p>
+							</div>
+
+							<p> Arcane Beauty Lounge</p>
+
+						</div>
+
+						<!-- TIKTOK -->		
+						<div class = "item">	
+
+							<div class = "icon-plus-text">
+								<img src = "./images/Resources/PageResources/resourceBranches/tiktokIcon.png" class = "branch-icons">
+								<p>Tiktok</p>		
+							</div>	
+
+							<p> arcanebeautyofficial </p>
+
+						</div>
+					</div>
+
+					<hr class = 'popup-divider-line'>
+
+			</div>
+
+				<!-- GOOGLE MAPS EMBED -->
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1932.8635082563724!2d120.94733268342158!3d14.327282907947541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d58f293dac15%3A0x401b64dc055bac1b!2sArcane%20Beauty%20Lounge%20-%20Dasmari%C3%B1as!5e0!3m2!1sen!2sph!4v1720604450650!5m2!1sen!2sph" width="500" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe>
+
+			</div>
+	</div>
+
+	<!-- DIVIDER 6 (Horizontal line)-->
+	<hr class="divider" color="#171717">
+
+	<!-- FOOTER -->
+			<div class="sectionFooter">
+				<br>
+				<div>
+					<a href="https://www.lazada.com.ph/shop/arcanebeautyofficialph/" target="_blank">
+						<img src="./images/Resources/PageResources/resourceHome/lazadaLogo.png" alt="Lazada Logo">
+					</a>
+					<a href="https://shopee.ph/arcanebeautyofficial" target="_blank">
+						<img src="./images/Resources/PageResources/resourceHome/shopeeLogo.png" alt="Shopee Logo">
+					</a>
+				</div>
+				<div>
+					<i><b><p>@arcanebeautyofficial</p></b></i><br>
+				</div>
+			</div>
+		
+	<script src = "./js/branchesScript.js"></script>
+	<script src="./js/BannerScript.js"></script>
+	<script src = './js/sidePane.js'></script>
+
+	</body>
+</HTML>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- CSS LINK -->
+		<link rel="stylesheet" href="./css/arcaneBanner.css">
+		<link rel="stylesheet" href="./css/arcaneHome.css">
+		<link rel="stylesheet" href="./css/arcaneServicesLounge.css">
+		
+		<!-- TITLE -->
+		<title>Services - Aesthetic Salon</title> 
+	</head>
+
+	<body>
+	<!-- HEADER BANNER -->
+
+	<div class="headerBanner">
+		<div class = "headerContent">
+
+			<!-- MAIN LOGO (ALSO LINKS TO "HOME" WHEN CLICKED) -->
+			<div id = "imgContainer">
+
+				<a href="index.html"> 
+					<img src="./images/Resources/ArcaneLogo.png" height="auto" width="250px"> 
+				</a>
+						
+			</div>
+					<!-- LINKS TO OTHER PAGES -->
+		<div class="headerMenu"> 
+			<a href="index.html" class="bannerOption">Home</a>
+			<a href="products.html" class="bannerOption">Products</a>
+			<a href="services-lounge.html" class="bannerOption">Services</a>
+			<a href="branches.html" class="bannerOption">Branches</a>
+			<a href="contact-us.html" class="bannerOption">Contact Us</a>
+			<a href="https://www.facebook.com/messages/t/100730569594534"target="_blank" rel="noopener noreferrer" class="bannerOption">Book now</a>
+		</div> 
+
+		<!-- BURGER BUTTON -->
+		<div id="burgerBtn">
+			<div></div>
+			<div></div>
+			<div></div>
+		 </div>
+	</div>
+
+	<!-- SIDE PANE -->
+	<div id="side-pane" class = "side-pane">
+		<span id="close-btn" style="cursor: pointer; font-size: 1.25rem;"> X </span>
+		<a href="index.html" class="bannerOption">Home</a>
+		<a href="products.html" class="bannerOption">Products</a>
+		<a href="services-lounge.html" class="bannerOption">Services</a>
+		<a href="branches.html" class="bannerOption">Branches</a>
+		<a href="contact-us.html" class="bannerOption">Contact Us</a>
+		<a href="https://www.facebook.com/messages/t/100730569594534"target="_blank" rel="noopener noreferrer" class="bannerOption">Book now</a>
+
+	 </div>
+
+
+		
+	<!-- DIVIDER 1 (Horizontal line)-->
+		<div class = "dividers">
+			<hr color="#D3AF37">
+			<hr color="#171717">
+		</div>
+
+	</div>
+	
+	<!-- BODY -->
+		<div class="mainBody"><br>
+
+		<!-- SELECTION MENU -->
+			<p>
+				<span class="menuSelected"> <a href="./services-lounge.html" class="servicesLink">BEAUTY LOUNGE</a></span> |
+				<span class="menuUnselected"> <a href="./services-salon.html" class="servicesLink">BEAUTY SALON</a></span> | 
+				<span class="menuUnselected"> <a href="./services-cafe.html" class="servicesLink">CAFE</a></span>
+			</p><br>
+
+		<!-- DIVIDER (Horizontal line)-->
+			<hr class="divider2" color="#D3AF37">
+
+		<!-- SECOND BANNER -->
+			<div class="secondBanner">
+				<div><h1>BEAUTY LOUNGE</h1></div>
+			</div>
+
+		<!-- DIVIDER (Horizontal line)-->
+			<hr class="divider2" color="#D3AF37"> <br><br>
+			<hr class="divider2" color="#D3AF37">
+
+		<!-- SERVICES LIST-->
+
+		<!--
+			FORMAT:
+			Use <h2> for the main type of service
+		 	Use <h3> for the child of the main types
+		 	Use <p> and for the normal options
+				<span class="service"> for the name
+				<span class="price"> for the price
+				<span class="descriptorGold (or descriptorWhite)"> for the small description
+			Indentation follows this hierarchy:
+				MAIN TYPE
+					CHILD
+						NORMAL OPTION
+			Sample:
+				HAND AND FOOT CARE
+					CLASSIC
+						MANICURE
+			
+			and so on
+		-->
+		
+		<!-- MAIN CONTAINER -->
+			<div class="mainContainer">
+
+				<!-- COLUMN 1-->
+				<div class="mainColumn"><br>			
+					<div class="mainRows"><br>			
+						<h2>Facial services </h2>		
+								<p>	<span class="service">Arcane Facial </span></p>
+								<p>	<span class="service">Hydra Facial </span></p>
+								<p>	<span class="service">Silver Facial </span></p>
+								<p>	<span class="service">Bronze Facial </span></p>
+								<p>	<span class="service">Carbon Laser Facial </span></p>
+					</div>
+					<div class="mainRows"><br>
+						<h2>Hand and foot care </h2>
+								<p>	<span class="service">Foot spa </span></p>
+							<br><h3>Classic</h3>
+								<p>	<span class="service">Manicure </span></p>
+								<p>	<span class="service">Pedicure </span></p>
+								<p>	<span class="service">Mani + Pedi </span></p>
+								<p>	<span class="service">Mani + Pedi + Foot Spa </span></p>
+							<br><h3>Gel</h3>
+								<p>	<span class="service">Removal </span></p>
+								<p>	<span class="service">Manicure </span></p>
+								<p>	<span class="service">Pedicure </span></p>
+								<p>	<span class="service">Mani + Pedi </span></p>
+								<p>	<span class="service">Mani + Pedi + Foot Spa </span></p>
+							<br><h3>Extension</h3>
+								<p>	<span class="service">Removal </span></p>
+								<p>	<span class="service">Soft Gel </span></p>
+								<p>	<span class="service">Poly Gel </span></p>
+								<p>	<span class="service">Upgrade to Gel</span></p>
+							<br><h3>Nail art</h3>
+								<p>	<span class="service">Small Charms </span></p>
+								<p>	<span class="service">Big Charms </span></p>
+								<p>	<span class="service">Designing (per nail) </span></p>
+								<p>	<span class="service">Installation (per nail)</span></p>
+							<br><h3>Loyalty Upgrades</h3>
+								<p>	<span class="service">Classic to Gel Per Service</span></p>
+					</div>
+					<div class="mainRows"><br>
+						<h2>Lashes & Brows </h2>
+								<p>	<span class="service">Natural </span></p>
+								<p>	<span class="service">Glamor </span></p>
+								<p>	<span class="service">Extravagant </span></p>
+								<p>	<span class="service">Last Lift </span></p>
+								<p>	<span class="service">Last Tint </span></p>
+								<p>	<span class="service">Brow Lamination </span></p>
+								<p>	<span class="service">Microblading </span></p>
+								<p>	<span class="service">Microblading w/ Shading </span></p>
+					</div>
+					<div class="mainRows"><br>
+						<h2>Arcane Essentials</h2>
+								<p>	<span class="service">Niacinamide Serum </span></p>
+								<p>	<span class="service">Collagen Serum </span></p>
+								<p>	<span class="service">Radiance Toner </span></p>
+								<p>	<span class="service">Radiance Facial Wash </span></p>
+					</div>
+				</div>
+
+				<!-- COLUMN 2-->
+				<div class="mainColumn"><br>
+					<div class="mainRows"><br>
+						<h2>Slimming</h2>
+							<h3>Hifu</h3>
+								<p>	<span class="service">Face & Chin</span></p>
+								<p>	<span class="service">Arms</span></p>
+								<p>	<span class="service">Tummy</span></p>
+								<p>	<span class="service">Legs & Thighs</span></p>
+							<br><h3>RF </h3>
+								<p>	<span class="service">RF Therapy </span></p>
+								<p>	<span class="service">RF + Cavitation </span></p>
+								<p>	<span class="service">7-step Lipoburn (per part) </span></p>
+							<br><h3>Exilis</h3>
+								<p>	<span class="service">Face & Neck </span></p>
+								<p>	<span class="service">Arms </span></p>
+								<p>	<span class="service">Thighs </span></p>
+								<p>	<span class="service">Tummy </span></p>
+							<br><h3>Cyrolipolysis</h3>
+								<p>	<span class="service">Per Probe </span></p>
+							<br><h3>Mesopilo (4x + Free RF)</h3>
+								<p>	<span class="service">Face and Chin</span></p>
+								<p>	<span class="service">Barbie Arms </span></p>
+								<p>	<span class="service">Barbie Tummy </span></p>
+								<p>	<span class="service">Barbie Thighs </span></p>
+								<p>	<span class="service">Barbie Legs </span></p>
+					</div>
+					<div class="mainRows"><br>
+						<h2>Gluthathione </h2>
+								<p>	<span class="service">Arcane Drip </span></p>
+								<p>	<span class="service">Hycinth Drip </span></p>
+								<p>	<span class="service">Azure Drip </span></p>
+								<p>	<span class="service">Roseus Drip </span></p>
+								<p>	<span class="service">Argent Push </span></p>
+							<br><h3>Loyalty Upgrades</h3>
+								<p><span class="service">Upgrade to other drip</span></p>
+								<p><span class="descriptorGold" style="margin:0px;"> Argent push valued at the help of its price</span></p>
+					</div>
+					<div class="mainRows"><br>
+						<h2>Semi Permanent</h2>
+								<p>	<span class="service">BP Glow w/ Stem Cell</span></p>
+								<p>	<span class="service">Lip Pigmentation </span></p>
+								<p>	<span class="service">Lip Color Correction </span></p>
+					</div>
+					<div class="mainRows"><br>
+						<h2>Arcane Journey</h2>
+								<p>	<span class="service">3 Months Skin Repair</span></p>
+								<p><span class="descriptorWhite">Carbon laser • Microneedling • Roseus Drip • <br>Stem Cell & Collagen Boosters</span></p>
+								<p>	<span class="service">3 Months Skin Whitening </span></p>
+								<p><span class="descriptorWhite"> Full Body White Bleaching • Arcane Drip</span></p>
+								<p>	<span class="service">3 Months Skin Slimming </span></p>
+								<p><span class="descriptorWhite">Full Body HIFU • Mesopilo, RF & Cavitation • <br>Slimming Drip</span></p>
+					</div>
+				</div>
+				
+				<!-- COLUMN 3-->
+				<div class="mainColumn"><br>
+					<div class="mainRows"><br>
+						<h2>Whitening & Repair </h2>
+								<p>	<span class="service">Lip Revitalization </span></p>
+								<p>	<span class="service">Microneedling </span></p>
+								<p>	<span class="service">CO2 Fractional Laser</span></p>
+								<p>	<span class="service">3+2 Sessions </span></p>
+								<p>	<span class="service">White Bleaching Per Part</span></p>
+							<br><h3>Demarbrasion</h3>
+								<p>	<span class="service">Waste Removal</span></p>
+								<p>	<span class="service">Tattoo Removal 2x2</span></p>
+								<p>	<span class="service">Tattoo Removal 1x1 Add On</span></p>
+							<br><h3>Pico Laser</h3>
+								<p>	<span class="service">Laser Whitening Per Part</span></p>
+								<p>	<span class="service">Treatment Per Part</span></p>
+								<p>	<span class="service">Knees and Elbow Pico Laser</span></p>
+								<p>	<span class="service">& Whitening Treatment</span></p>
+					</div>
+					<div class="mainRows"><br>
+						<h2>Hair Removal </h2>
+								<p>	<span class="service">Underarms </span></p>
+								<p>	<span class="service">Lips </span></p>
+								<p>	<span class="service">Arms, Legs, Chest, or Back </span></p>
+								<p>	<span class="service">Bikini </span></p>
+								<p>	<span class="service">Brazilian </span></p>
+								<p>	<span class="service">Full Body </span></p>
+							<br><h3>Unlimited Full Body</h3>
+								<p>	<span class="service">3 months </span></p>
+								<p>	<span class="service">6 months </span></p>
+								<p>	<span class="service">1 year </span></p>
+					</div>
+					<div class="mainRows"><br>
+						<h2>Waxing </h2>
+								<p>	<span class="service">Full Face </span></p>
+								<p>	<span class="service">Underarms </span></p>
+								<p>	<span class="service">Lips </span></p>
+								<p>	<span class="service">Arms, Legs, Chest, or Back </span></p>
+								<p>	<span class="service">Legs, or Bikini </span></p>
+								<p>	<span class="service">Brazilian </span></p>
+								<p>	<span class="service">Full Body </span></p>
+					</div>
+					<div class="mainRows"><br>
+						<h2>Loyalty Card</h2>
+								<p>	<span class="service">Basic (1yr)* </span></p>
+								<p>	<span class="descriptorWhite", style="margin:0px;">3% Discount, Monthly ManiPedi & Bronze Facial, 
+									Birthday Carbon Carbon Facial, ₱500 off drips, ₱50 off push </span></p>
+								<h3>Lux (Unlimited Benefits)**</h3>
+								<p>	<span class="descriptorWhite", style="margin:0px;">
+									• All Basic Benefits <br>
+									• Unlimited services for the ffg:
+								</span></p>
+								<p>	<span class="descriptorGold">
+									• All Types of Facial Service 
+									• HIFU 
+									• Hair Removal & Pico Lasers 
+									• Classic Nail Care
+									• Argent Gluthathione Push (valued at half the price if upgrading)
+								</span></p>
+								<p>	<span class="service">Bronze (3 months)</span></p>
+								<p>	<span class="service">Silver (6 months)</span></p>
+								<p>	<span class="service">Gold (1 year)</span></p>
+					</div>
+			</div>
+		</div>
+			<div class="menuBookNow"><br>
+				<div>
+					<p>*requires minimum purchase of 500 pesos to avail freebies</p>
+					<p>**no minimum purchase requirement when booking appointments</p>
+					<p>and follows correct and medically-approved services frequency</p>
+				</div>
+				<div>
+					<a href="https://www.facebook.com/messages/t/100730569594534"target="_blank" rel="noopener noreferrer"> 
+					<img src="./images/Resources/PageResources/resourceBookNow/bookAppointmentButton.png" class="bookNowButton" style="vertical-align: -50px;"></a>
+				</div>
+				<div>
+					<img src="./images/Resources/PageResources/resourceServices/loyaltyCard.png" height="auto" width="50%" >
+				</div>
+			</div>
+		
+
+		<div class="mainFooter"></div>
+
+	<script src="./js/BannerScript.js"></script>
+	<script src = "./js/sidePane.js"></script>
+
+	</body>
+</HTML>

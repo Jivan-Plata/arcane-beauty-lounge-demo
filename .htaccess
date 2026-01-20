@@ -1,0 +1,5 @@
+DirectoryIndex index.html
+
+RewriteEngine on
+RewriteRule ^Home index.html [NC]
+RewriteRule ^Products arcaneProducts.html [NC]

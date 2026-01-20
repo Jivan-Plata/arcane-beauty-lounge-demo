@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- CSS LINK -->
+		<link rel="stylesheet" href="./css/arcaneBanner.css">
+		<link rel="stylesheet" href="./css/arcaneHome.css"> <!-- For <hr> uses -->
+        <link rel="stylesheet" href="./css/arcaneBookNow.css">
+		
+		<!-- TITLE -->
+		<title> Our Services </title> 
+	</head>
+
+	<body>
+	<!-- HEADER BANNER -->
+	<script src="./js/BannerScript.js"></script>
+
+	<div class="headerBanner">
+		<div class = "headerContent">
+
+			<!-- MAIN LOGO (ALSO LINKS TO "HOME" WHEN CLICKED) -->
+			<div id = "imgContainer">
+
+				<a href="/home.html"> 
+					<img src="./images/Resources/ArcaneLogo.png" height="auto" width="250px"> 
+				</a>
+						
+			</div>
+					<!-- LINKS TO OTHER PAGES -->
+		<div class="headerMenu"> 
+			<a href="index.html" class="bannerOption">Home</a>
+			<a href="products.html" class="bannerOption">Products</a>
+			<a href="services-lounge.html" class="bannerOption">Services</a>
+			<a href="branches.html" class="bannerOption">Branches</a>
+			<a href="contact-us.html" class="bannerOption">Contact Us</a>
+			<a href="https://www.facebook.com/messages/t/100730569594534"target="_blank" rel="noopener noreferrer" class="bannerOption">Book now</a>
+		</div> 
+
+		<!-- BURGER BUTTON -->
+		<div id="burgerBtn">
+			<div></div>
+			<div></div>
+			<div></div>
+		 </div>
+	</div>
+
+	<!-- SIDE PANE -->
+	<div id="side-pane" class = "side-pane">
+		<span id="close-btn" style="cursor: pointer; font-size: 1.25rem;"> X </span>
+		<a href="home.html" class="bannerOption">Home</a>
+		<a href="products.html" class="bannerOption">Products</a>
+		<a href="services-lounge.html" class="bannerOption">Services</a>
+		<a href="branches.html" class="bannerOption">Branches</a>
+		<a href="contact-us.html" class="bannerOption">Contact Us</a>
+		<a href="https://www.facebook.com/messages/t/100730569594534"target="_blank" rel="noopener noreferrer" class="bannerOption">Book now</a>
+
+	 </div>
+
+
+		
+	<!-- DIVIDER 1 (Horizontal line)-->
+		<div class = "dividers">
+			<hr color="#D3AF37">
+			<hr color="#171717">
+		</div>
+
+	</div>
+
+	<!-- BODY -->
+		<div class="containerBookNow"> 
+			<!--MAIN CONTAINER FOR THE ENTIRE FORM -->
+					<!--NOTE: THE LEFT SIDE AND THE RIGHT SIDE OF THE PAGE 
+					IS SEPARATED BY TWO DIFFERENT CONTAINERS-->
+			<form class="containerForm" method="POST"> 	
+
+				<!-- LEFT SIDE -->
+				<div class="leftContainer">
+					<div class="bookNowTitle"> <!-- BOOK NOW TITLE -->
+						<br><h1 class="pageTitle">BOOK AN APPOINTMENT</h1><br><br></div>
+
+					<div><label> Name <br>
+						<input name="userName" id="userName" placeholder="Isidro Dimagiba"></label><br></div>
+
+					<div><label> Contact No. <br>
+						<input name="userNumber" id="userNumber" placeholder="09XX-XXX-XXXX"></label><br></div>
+				
+					<div><label> Email Address <br>
+						<input type="email" name="userEmail" id="userEmail" 
+						placeholder="Isidro.dimagiba@gmail.com"></label><br></div>
+				
+					<div><label> Date and Day <br>
+						<input type="datetime-local" name="userSchedule" id="userSchedule"></label><br></div>
+				</div>
+				
+				<!-- RIGHT SIDE -->
+				<div class="rightContainer">
+					<div class="bookNowTitle"> 
+						<br><h1 class="pageTitle">‎</h1><br><br></div> 
+							<!-- BLANK TEXT TO ALIGN BOTH SIDES -->
+					
+					<!-- DROP DOWN MENU -->
+					<div><label> Service List <br>
+						<input list="userService" name="userService"> <datalist id="userService">
+							<option value="Option 1">
+							<option value="Option 2">
+							<option value="Option 3">
+							<option value="Option 4">
+							<option value="Option 5">
+						</option></datalist></label></div><br>
+
+						<div><label> Branches <br>
+							<input list="userBranch" name="userBranch"> <datalist id="userBranch">
+								<option value="Dimasalang, Manila">
+								<option value="Dasmariñas, Cavite">
+							</option></datalist></label></div><br>
+						
+					<!-- TEXT AREA -->
+					<div><label> Message <br>
+						<textarea name="userMessage" name="userMessage" id="userMessage" rows="8" cols="53"
+						placeholder="Good day, I am messaging you today regarding..."
+						></textarea></label></div> 	<!--The '>' is placed here so as not to
+														put a space inside the text area -->
+					<!-- BUTTONS -->
+					<button type="submit"> SUBMIT </button>
+					<button type="reset"> RESET </button> 
+				</div>
+			</form><br><br><br>
+		</div>
+			{{#if message}}
+				<div class="messageBox">
+				<h2 class="headerDescription" style="text-align: center; padding:20px; color:#171717;"
+				>{{message}}<br></div></h2>
+			{{/if}}
+
+			<script src="./js/BannerScript.js"></script>
+			<script src = './js/sidePane.js'></script>
+	</body>
+</HTML>
