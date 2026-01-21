@@ -36,6 +36,12 @@ body {
 	width: 100%;
 }
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /* Critical for keeping widths accurate */
+  }
+
 
 /* I. PRODUCTS SECTION WITH BUTTON */
 
@@ -256,9 +262,10 @@ body {
 
 .reviews-container {
 	padding: 2.5rem;
-
 	display: grid;
-	grid-template-rows: repeat(3, 1fr);
+	justify-items: center;
+	align-items: center;
+	grid-template-columns: repeat(1, 1fr);
 	width: 100%;
 	max-width: 1500px;
 	
@@ -285,9 +292,8 @@ body {
 }
 
 .review-item {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+	display: grid;
+	justify-items: center;
 	align-items: center;
 
 	& .review-information {
@@ -315,8 +321,8 @@ body {
 .review-person {
 	& .reviews-image-container {
 		border-radius: 50%;
-		width: clamp(9rem, 15vw, 14rem);
-		height: clamp(9rem, 15vw, 14rem);
+		width: clamp(7rem, 15vw, 14rem);
+		height: clamp(7rem, 15vw, 14rem);
 		overflow: hidden;
 	}
 
@@ -438,11 +444,16 @@ body {
 	align-items: center;
 
     .socialImages {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-top: 1rem;
+		gap: 1rem;
 
 		img{
 			width: 25%;
 			height:auto;
-			margin:2%;
 			border: 2px solid #776430;
 		}
 	}
@@ -456,8 +467,9 @@ body {
 .socialLinks{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 	gap: 2rem;
 
 	& img {
@@ -517,6 +529,7 @@ h1.pageTitle, h2.pageTitle {
 	text-align: center;
 	font-family: 'Acumin-BdPro', sans-serif;
 	font-weight: bold;
+	margin-block: 1rem;
 	
 }
 

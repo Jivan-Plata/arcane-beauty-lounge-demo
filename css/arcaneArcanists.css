@@ -1,3 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Critical for keeping widths accurate */
+  }
+
+body {
+	overflow-x: hidden; /* This is the ultimate safety net */
+	width: 100%;
+}
+
 /* HORIZONTAL LINE DIVIDER (BELOW BANNER) */
 hr.divider {
     width: 100%;

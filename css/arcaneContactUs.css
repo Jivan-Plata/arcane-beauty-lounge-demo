@@ -1,10 +1,20 @@
 
 /* REMOVE THE EXTRA MARGINS AND PADDINGS FOR THE BODY & FOOTER */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Critical for keeping widths accurate */
+  }
 
 html, body, .sectionFooter i,b,p {
     margin: 0;
     padding: 0;
 }  
+
+body {
+	overflow-x: hidden; /* This is the ultimate safety net */
+	width: 100%;
+}
 
 .mainContainer {
     min-height:115vh;

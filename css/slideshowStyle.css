@@ -1,3 +1,14 @@
+body {
+	overflow-x: hidden; /* This is the ultimate safety net */
+	width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Critical for keeping widths accurate */
+  }
+
 /* SLIDESHOW BACKROUND SETTINGS */
 .headerPromos {
     background: url(../images/Resources/PageResources/resourceHome/ArcaneBG.png) no-repeat center center fixed;
