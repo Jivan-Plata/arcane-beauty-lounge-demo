@@ -52,6 +52,11 @@ body {
 .arcaneEssentials {
     margin-top: 1%;
     margin-bottom: 2%;
+
+	& img {
+		height:auto;
+		width: clamp(250px, 40vw, 350px)
+	}
 }
 
 /* PRODUCT IMAGES */
@@ -64,7 +69,7 @@ body {
 
     img {
         height: auto;
-        width: clamp(22rem, 40vw, 32rem);
+        width: clamp(16rem, 40vw, 32rem);
         margin-bottom: 2rem;
     }
 }
