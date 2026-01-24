@@ -56,7 +56,11 @@ body {
     .mainColumn{
         width: 100%;
         max-width: 45rem;
-        margin: 3rem;
+        margin: 1rem;
+
+        @media (width >= 48rem) {
+            margin: 4rem;
+        }
     }
 
     h1, h2, h3, p, label,input {
@@ -112,6 +116,7 @@ body {
         flex-direction: column;
         align-items: center;
         padding-inline: 1.25rem;
+        box-sizing: border-box;
  
         border-radius: 0px;
         box-shadow: 5px 5px rgba(136, 136, 136, 0.6);
@@ -119,14 +124,34 @@ body {
         background: #232323;
 	    background: url(../images/Resources/PageResources/resourceContactUs/contactContainerBG.png) no-repeat center center fixed;
 	    background-size: cover;
-
-
-        input, textarea {
-            margin-top: 5px;
-            margin-bottom: 5px;
-            resize: none;
-        }
     }
+
+    .containerFormBody label, 
+    .containerFormBody div {
+        text-align: center;
+        width: 100%; 
+        max-width: 500px; /* Limits how wide the form grows */
+    }
+
+    .containerFormBody textarea {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 100%;      /* Now 100% of the label's 600px */
+        display: block;   /* Important for alignment */
+        box-sizing: border-box; 
+    }
+
+    /* Keep the Email box short */
+#userEmail {
+    height: 2.5rem; 
+    resize: none; /* Usually, people don't need to resize an email field */
+}
+
+/* Make the Message box much taller */
+#userMessage {
+    min-height: 200px; /* Adjust this value to your liking */
+    resize: vertical;  /* Allows the user to pull the corner down but not sideways */
+}
 
     .contacts-section { 
         display: flex;
