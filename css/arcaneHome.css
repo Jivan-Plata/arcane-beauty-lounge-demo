@@ -42,8 +42,14 @@ body {
 	box-sizing: border-box; /* Critical for keeping widths accurate */
   }
 
+.side-pane a {
+	padding: 0.6rem;
+	border-radius: 5px;
+}
 
 /* I. PRODUCTS SECTION WITH BUTTON */
+
+
 
 .productsBanner {
 	color: aliceblue;
